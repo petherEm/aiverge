@@ -72,11 +72,6 @@ export default function GridCategories() {
               ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none'
               : '',
             actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-            actionIdx === category.length - 2 ? 'sm:rounded-bl-lg' : '',
-            actionIdx === category.length - 1
-              ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none'
-              : '',
-            'group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500',
           )}
         >
           <div className="flex items-center justify-start">
