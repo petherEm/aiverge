@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 interface Tool {
   name: string
@@ -6,7 +6,7 @@ interface Tool {
   description: string
   web: string
   model: string
-  image: string
+  image: string | StaticImageData
 }
 
 export default function ToolsTable({ tools }: { tools: Tool[] }) {
